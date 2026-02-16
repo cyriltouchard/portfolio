@@ -1,199 +1,270 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Cyril Touchard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="public/css/style.css">
-  
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Cyril Touchard</h1>
-        <p class="tagline">Développeur Web & Mobile </p>
-        <div>
-            <a href="https://github.com/cyriltouchard" class="btn"><i class="fab fa-github"></i> Mon GitHub</a>
-        </div>
-        <a href="cv-cyril-touchard.pdf" target="_blank" class="btn btn-outline">
-            <i class="fas fa-file-download"></i> Télécharger mon CV
-        </a>
+      <h1>Cyril Touchard</h1>
+      <p class="tagline">Développeur Web & Mobile</p>
+      <div>
+        <a href="https://github.com/cyriltouchard" class="btn"
+          ><i class="fab fa-github"></i> Mon GitHub</a
+        >
+      </div>
+      <a href="cv-cyril-touchard.pdf" target="_blank" class="btn btn-outline">
+        <i class="fas fa-file-download"></i> Télécharger mon CV
+      </a>
     </header>
 
     <div class="container">
-        
-        <h2 class="section-title">Mes principales réalisations</h2>
-        <div class="project-card">
-            <h3>🌿 EcoRide - Plateforme de Covoiturage</h3>
-            <p>
-                Application complète de mise en relation entre conducteurs et passagers avec une dimension écologique.
-                Le projet respecte une architecture stricte et sécurisée.
-            </p>
-            <ul>
-                <li><strong>Architecture Hybride :</strong> MySQL (Utilisateurs/Trajets) + MongoDB (Avis/Logs).</li>
-                <li><strong>Back-office :</strong> Dashboard Administrateur avec graphiques Chart.js et gestion des employés.</li>
-                <li><strong>Sécurité :</strong> Protection XSS, Helmet (CSP), Rate Limiting, Validation Regex.</li>
-                <li><strong>DevOps :</strong> Environnement complet sous Docker & Docker Compose.</li>
-            </ul>
-           
-            <div class="tech-stack">
-                <span>Node.js</span>
-                <span>Express</span>
-                <span>MySQL</span>
-                <span>MongoDB</span>
-                <span>Docker</span>
-                <span>SonarQube</span>
-                <span>Chart.js</span>
-            </div>
-            <br>
-            <a href="https://github.com/cyriltouchard/EcoRide" class="btn">Voir le Code</a>
-        </div>
+      <h2 class="section-title">Mes principales réalisations</h2>
+      <div class="project-card">
+        <h3>🌿 EcoRide - Plateforme de Covoiturage</h3>
+        <p>
+          Application complète de mise en relation entre conducteurs et
+          passagers avec une dimension écologique. Le projet respecte une
+          architecture stricte et sécurisée.
+        </p>
+        <ul>
+          <li>
+            <strong>Architecture Hybride :</strong> MySQL (Utilisateurs/Trajets)
+            + MongoDB (Avis/Logs).
+          </li>
+          <li>
+            <strong>Back-office :</strong> Dashboard Administrateur avec
+            graphiques Chart.js et gestion des employés.
+          </li>
+          <li>
+            <strong>Sécurité :</strong> Protection XSS, Helmet (CSP), Rate
+            Limiting, Validation Regex.
+          </li>
+          <li>
+            <strong>DevOps :</strong> Environnement complet sous Docker & Docker
+            Compose.
+          </li>
+        </ul>
 
-        <div class="project-card">
-            <h3>📅 Agenda Virtuel - Application de Gestion Collaborative</h3>
-            <p>
-                Application web moderne de gestion d'agenda avec système de partage d'événements et fonctionnalités collaboratives.
-                Architecture full-stack complète avec authentification sécurisée.
-            </p>
-            <ul>
-                <li><strong>Backend RESTful :</strong> API complète avec Node.js, Express et MongoDB pour la gestion des événements et utilisateurs.</li>
-                <li><strong>Frontend Moderne :</strong> Interface Angular 17 avec Material Design pour une expérience utilisateur fluide.</li>
-                <li><strong>Authentification JWT :</strong> Système sécurisé avec hashage bcrypt et gestion de sessions stateless.</li>
-                <li><strong>Fonctionnalités Collaboratives :</strong> Partage d'événements, système d'amis, notifications et commentaires en temps réel.</li>
-            </ul>
-           
-            <div class="tech-stack">
-                <span>Node.js</span>
-                <span>Express</span>
-                <span>MongoDB</span>
-                <span>Angular 17</span>
-                <span>JWT</span>
-                <span>TypeScript</span>
-                <span>Material Design</span>
-            </div>
-            <br>
-            <a href="https://github.com/cyriltouchard/agenda-virtuel.git" class="btn">Voir le Code</a>
+        <div class="tech-stack">
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>MySQL</span>
+          <span>MongoDB</span>
+          <span>Docker</span>
+          <span>SonarQube</span>
+          <span>Chart.js</span>
         </div>
+        <br />
+        <a href="https://github.com/cyriltouchard/EcoRide" class="btn"
+          >Voir le Code</a
+        >
+      </div>
 
-        <div class="project-card">
-            <h3>🏗️ 3D Services SARL - Site Web Professionnel</h3>
-            <p>
-                Plateforme complète de services d'impression 3D avec gestion automatisée des devis, paiements sécurisés et facturation.
-                Solution full-stack pour une entreprise spécialisée dans l'impression 3D sur mesure.
-            </p>
-            <ul>
-                <li><strong>Système de Devis :</strong> Génération automatisée et interactive avec calculs en temps réel.</li>
-                <li><strong>Paiements Sécurisés :</strong> Intégration complète Stripe & PayPal avec facturation automatique PDF (TCPDF).</li>
-                <li><strong>Back-office Admin :</strong> Dashboard avec analytics, gestion factures (845 lignes) et automatisation des processus.</li>
-                <li><strong>Architecture :</strong> PHP 7.4+, Bootstrap 4, API REST, système d'emails automatisé (PHPMailer).</li>
-                <li><strong>DevOps :</strong> Docker, tests automatisés, SEO optimisé et responsive design.</li>
-            </ul>
-           
-            <div class="tech-stack">
-                <span>PHP 7.4</span>
-                <span>Bootstrap</span>
-                <span>Stripe API</span>
-                <span>PayPal SDK</span>
-                <span>TCPDF</span>
-                <span>Docker</span>
-                <span>PHPMailer</span>
-            </div>
-            <br>
-            <a href="https://github.com/cyriltouchard/mon-site-3d" class="btn">Voir le Code</a>
+      <div class="project-card">
+        <h3>📅 Agenda Virtuel - Application de Gestion Collaborative</h3>
+        <p>
+          Application web moderne de gestion d'agenda avec système de partage
+          d'événements et fonctionnalités collaboratives. Architecture
+          full-stack complète avec authentification sécurisée.
+        </p>
+        <ul>
+          <li>
+            <strong>Backend RESTful :</strong> API complète avec Node.js,
+            Express et MongoDB pour la gestion des événements et utilisateurs.
+          </li>
+          <li>
+            <strong>Frontend Moderne :</strong> Interface Angular 17 avec
+            Material Design pour une expérience utilisateur fluide.
+          </li>
+          <li>
+            <strong>Authentification JWT :</strong> Système sécurisé avec
+            hashage bcrypt et gestion de sessions stateless.
+          </li>
+          <li>
+            <strong>Fonctionnalités Collaboratives :</strong> Partage
+            d'événements, système d'amis, notifications et commentaires en temps
+            réel.
+          </li>
+        </ul>
+
+        <div class="tech-stack">
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>MongoDB</span>
+          <span>Angular 17</span>
+          <span>JWT</span>
+          <span>TypeScript</span>
+          <span>Material Design</span>
         </div>
+        <br />
+        <a
+          href="https://github.com/cyriltouchard/agenda-virtuel.git"
+          class="btn"
+          >Voir le Code</a
+        >
+      </div>
 
-        <div class="project-card">
-            <h3>🌶️ Site Spicy_FR - Template Streamer Next.js</h3>
-            <p>
-                Template moderne et réutilisable pour sites de streamers Twitch/YouTube avec architecture scalable et système de configuration centralisée.
-                Projet one-page professionnel pour la streameuse Gaming Spicy_FR (43.6k followers).
-            </p>
-            <ul>
-                <li><strong>Next.js 16 & React 19 :</strong> App Router avec Server Components, TypeScript strict et architecture moderne.</li>
-                <li><strong>Design Gaming :</strong> UI/UX immersive avec effets glow, gradients animés, badges "EN LIVE" et palette Twitch/Orange.</li>
-                <li><strong>Template Réutilisable :</strong> Configuration centralisée (streamer.config.ts) pour générer un nouveau site en 10 minutes.</li>
-                <li><strong>Scripts d'Automatisation :</strong> PowerShell/Bash pour création automatique de sites (copie, renommage, config).</li>
-                <li><strong>Partenaires Interactifs :</strong> Système de codes promo avec copie one-click, animations hover et intégration sponsors.</li>
-            </ul>
-           
-            <div class="tech-stack">
-                <span>Next.js 16</span>
-                <span>React 19</span>
-                <span>TypeScript</span>
-                <span>Tailwind CSS 4</span>
-                <span>Vercel</span>
-                <span>Lucide Icons</span>
-            </div>
-            <br>
-            <a href="https://github.com/cyriltouchard/site-spicy-fr" class="btn">Voir le Code</a>
+      <div class="project-card">
+        <h3>🏗️ 3D Services SARL - Site Web Professionnel</h3>
+        <p>
+          Plateforme complète de services d'impression 3D avec gestion
+          automatisée des devis, paiements sécurisés et facturation. Solution
+          full-stack pour une entreprise spécialisée dans l'impression 3D sur
+          mesure.
+        </p>
+        <ul>
+          <li>
+            <strong>Système de Devis :</strong> Génération automatisée et
+            interactive avec calculs en temps réel.
+          </li>
+          <li>
+            <strong>Paiements Sécurisés :</strong> Intégration complète Stripe &
+            PayPal avec facturation automatique PDF (TCPDF).
+          </li>
+          <li>
+            <strong>Back-office Admin :</strong> Dashboard avec analytics,
+            gestion factures (845 lignes) et automatisation des processus.
+          </li>
+          <li>
+            <strong>Architecture :</strong> PHP 7.4+, Bootstrap 4, API REST,
+            système d'emails automatisé (PHPMailer).
+          </li>
+          <li>
+            <strong>DevOps :</strong> Docker, tests automatisés, SEO optimisé et
+            responsive design.
+          </li>
+        </ul>
+
+        <div class="tech-stack">
+          <span>PHP 7.4</span>
+          <span>Bootstrap</span>
+          <span>Stripe API</span>
+          <span>PayPal SDK</span>
+          <span>TCPDF</span>
+          <span>Docker</span>
+          <span>PHPMailer</span>
         </div>
+        <br />
+        <a href="https://github.com/cyriltouchard/mon-site-3d" class="btn"
+          >Voir le Code</a
+        >
+      </div>
 
-        <h2 class="section-title">Compétences Techniques</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <i class="fab fa-js"></i>
-                <h4>JavaScript</h4>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-node"></i>
-                <h4>Node.js</h4>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-php"></i>
-                <h4>PHP</h4>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-angular"></i>
-                <h4>Angular</h4>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-react"></i>
-                <h4>React & Next.js</h4>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-wind"></i>
-                <h4>Tailwind CSS</h4>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <h4>SQL & NoSQL</h4>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-docker"></i>
-                <h4>Docker</h4>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-shield-alt"></i>
-                <h4>Sécurité Web</h4>
-            </div>
-            <div class="skill-item">
-                <i class="fab fa-bootstrap"></i>
-                <h4>Bootstrap</h4>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-credit-card"></i>
-                <h4>API Paiements</h4>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <h4>MongoDB</h4>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-chart-line"></i>
-                <h4>Analytics</h4>
-            </div>
-            <div class="skill-item">
-                <i class="fas fa-code-branch"></i>
-                <h4>Git Flow</h4>
-            </div>
+      <div class="project-card">
+        <h3>🌶️ Site Spicy_FR - Template Streamer Next.js</h3>
+        <p>
+          Template moderne et réutilisable pour sites de streamers
+          Twitch/YouTube avec architecture scalable et système de configuration
+          centralisée. Projet one-page professionnel pour la streameuse Gaming
+          Spicy_FR (43.6k followers).
+        </p>
+        <ul>
+          <li>
+            <strong>Next.js 16 & React 19 :</strong> App Router avec Server
+            Components, TypeScript strict et architecture moderne.
+          </li>
+          <li>
+            <strong>Design Gaming :</strong> UI/UX immersive avec effets glow,
+            gradients animés, badges "EN LIVE" et palette Twitch/Orange.
+          </li>
+          <li>
+            <strong>Template Réutilisable :</strong> Configuration centralisée
+            (streamer.config.ts) pour générer un nouveau site.
+          </li>
+          <li>
+            <strong>Scripts d'Automatisation :</strong> PowerShell/Bash pour
+            création automatique de sites (copie, renommage, config).
+          </li>
+          <li>
+            <strong>Partenaires Interactifs :</strong> Système de codes promo
+            avec copie one-click, animations hover et intégration sponsors.
+          </li>
+        </ul>
+
+        <div class="tech-stack">
+          <span>Next.js 16</span>
+          <span>React 19</span>
+          <span>TypeScript</span>
+          <span>Tailwind CSS 4</span>
+          <span>Vercel</span>
+          <span>Lucide Icons</span>
         </div>
+        <br />
+        <a href="https://github.com/cyriltouchard/site-spicy-fr" class="btn"
+          >Voir le Code</a
+        >
+      </div>
 
+      <h2 class="section-title">Compétences Techniques</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <i class="fab fa-js"></i>
+          <h4>JavaScript</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-node"></i>
+          <h4>Node.js</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-php"></i>
+          <h4>PHP</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-angular"></i>
+          <h4>Angular</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-react"></i>
+          <h4>React & Next.js</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-wind"></i>
+          <h4>Tailwind CSS</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-database"></i>
+          <h4>SQL & NoSQL</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-docker"></i>
+          <h4>Docker</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-shield-alt"></i>
+          <h4>Sécurité Web</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-bootstrap"></i>
+          <h4>Bootstrap</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-credit-card"></i>
+          <h4>API Paiements</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-database"></i>
+          <h4>MongoDB</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-chart-line"></i>
+          <h4>Analytics</h4>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-code-branch"></i>
+          <h4>Git Flow</h4>
+        </div>
+      </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Cyril Touchard </p>
+      <p>&copy; 2026 Cyril Touchard</p>
     </footer>
-
-</body>
+  </body>
 </html>
